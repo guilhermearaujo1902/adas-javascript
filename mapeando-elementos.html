@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Capturando nome do usuário</h1>
+
+    <input type="text" id="nome" placeholder="Seu nome">
+    <input type="text" id="curso" placeholder="Seu curso">
+    <input type="text" id="cidade" placeholder="Sua cidade">
+    <button onclick="capturar()">Capturar</button>
+    
+    <script>
+
+        function capturar() {
+
+            const inputNome = document.getElementById('nome');
+            const inputCurso = document.getElementById('curso');
+            const inputCidade = document.getElementById('cidade');
+
+            alert('O usuário ' + inputNome.value + ' está estudando o curso ' + inputCurso.value + ' e mora na cidade ' + inputCidade.value);
+
+        }
+
+    </script>
+</body>
+</html>

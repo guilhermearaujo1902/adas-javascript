@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Entendendo condicionais</h1>
+
+    <input type="text" id="numero">
+    <button onclick="validarPar()">Validar</button>
+    
+    <script>
+
+        function validarPar() {
+
+            const inputNumero = document.getElementById('numero');
+
+            if (inputNumero.value % 2 == 0 ) {
+                alert(inputNumero.value + ' é um número PAR!');
+            } else {
+                alert(inputNumero.value + ' é um número IMPAR!');
+            }
+
+        }
+
+    </script>
+</body>
+</html>
