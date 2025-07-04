@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #e1e1e1;
+    padding: 10px;
+}
+
+.header {
+    background-color: #F43DF8;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.menu {
+    background-color: #B00E8C;
+}
+
+.conteudo {
+    background-color: #FFF;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+.conteudo h1 {
+    border-left: 5px solid #d9c73b;
+    color: #d9c73b;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.conteudo p {
+    font-size: 18px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    background-color: #830a69;
+    padding: 10px;
+    border-bottom: solid 1px #d9c73b;
+    text-align: center;
+}
+
+.menu a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.exercicio {
+    margin-top: 40px;
+}
+
+.exercicio input {
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    color: #323232;
+    border: none;
+    outline: none;
+    background-color: #e1e1e1;
+    border-radius: 4px;
+}
+
+.exercicio button {
+    border: none;
+    background-color: #d9c73b;
+    padding: 12px;
+    border-radius: 4px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.exercicio button:hover {
+    background-color: #ac9d2c;
+}
+
+.exercicio > p {
+    margin-top: 50px;
+}
+
+.resultado {
+    border: solid 2px #e1e1e1;
+    padding: 10px;
+    border-radius: 4px;
+}

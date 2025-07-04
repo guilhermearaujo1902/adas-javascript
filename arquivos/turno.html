@@ -1,0 +1,64 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/estilo.css">
+</head>
+<body>
+
+    <div class="header">
+        Guilherme
+    </div>
+
+    <div class="main">
+
+        <div class="menu">
+
+            <ul>
+                <li>
+                    <a href="index.html">Página principal</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="conteudo">
+            <h1>Descobrindo turnos</h1>
+            <p>
+                <strong>Enunciado</strong><br>
+                Este exercício tem a finalidade de exibir o turno de trabalho
+                dependendo da hora informada pelo usuário.
+            </p>
+            <br>
+            <p>
+                <strong>Instruções</strong><br>
+                Insira um horário (somente números) na caixinha de texto e valide o turno correto,sendo:
+                <br>
+                Primeiro turno: Entre 6h e 14h
+                <br>
+                Segundo turno: Entre 14h e 22h
+                <br>
+                Obs - Qualquer horário não definido préviamente, deve ser desconsiderado.
+            </p>
+
+            <div class="exercicio">
+
+                <input type="text" id="hora" placeholder="Ex: 7">
+                <button onclick="descobrirTurno()">Descobrir turno</button>
+
+                <p>
+                    <strong>Resultado</strong>
+                </p>
+                <div class="resultado" id="resultado">
+                    <p>Execute o exercício!</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="../scripts/turno.js"></script>
+</body>
+</html>
