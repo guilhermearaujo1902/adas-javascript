@@ -1,0 +1,38 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Tabuada!</h1>
+    <input type="text" id="numero">
+    <button onclick="imprimirTabuada()">Imprimir</button>
+    <div id="resultado"></div>
+    
+    <script>
+
+        function imprimirTabuada() {
+
+            // Mapear a div onde a tabuada será impressa
+            const divResultado = document.getElementById('resultado');
+            
+            // Mapeando o input para capturar o número digitado
+            const inputNumero = document.getElementById('numero');
+
+            // Armazenando o valor digitado no input dentro da constante
+            const numero = inputNumero.value;
+
+            // Executar o laço para imprimir a tabuada
+            for (let cont = 1; cont <= 10; cont++) {
+
+                divResultado.innerHTML += `<p> ${numero} x ${cont} = ${numero * cont} </p>`;
+
+            }
+
+        }
+
+    </script>
+</body>
+</html>

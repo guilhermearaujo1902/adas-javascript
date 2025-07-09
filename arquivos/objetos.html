@@ -1,0 +1,42 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Entendendo Objetos em JS</h1>
+    
+    <script>
+
+        // Declaração de um objeto
+        const aluna = {
+            nome: 'Hermione',
+            matricula: 12345,
+            cadastro: true,
+            endereco: {
+                rua: 'Rua Sete',
+                cidade: 'Blumenau',
+                numero: 1782
+            }
+        }
+
+        // Acessando uma propriedade existente do objeto para imprimir
+        console.log("Nome: " + aluna.nome);
+
+        console.log("Matrícula Antes de reatribuir: " + aluna.matricula);
+        // Acessar a propriedade do objeto para Reatribuir valor
+        aluna.matricula = 777;
+        console.log("Matrícula Depois de reatribuir: " + aluna.matricula);
+
+        console.log("Propriedade media antes de existir: " + aluna.media);
+        aluna.media = 8;
+        console.log("Propriedade media depois de existir: " + aluna.media);
+
+        // Imprimindo o valor de uma sub propriedade do objeto
+        console.log("Cidade: " + aluna.endereco.cidade);
+
+    </script>
+</body>
+</html>
