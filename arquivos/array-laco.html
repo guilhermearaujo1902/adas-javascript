@@ -1,0 +1,65 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Percorrendo uma Array com um laço ForEach</h1>
+    
+    <script>
+
+        const listaAlunas = [
+            {
+                codigo: 1,
+                nome: 'Iara'
+            },
+            {
+                codigo: 2,
+                nome: 'Maria'
+            },
+            {
+                codigo: 3,
+                nome: 'Camila'
+            },
+            {
+                codigo: 4,
+                nome: 'Maiara'
+            }, 
+            {
+                codigo: 5,
+                nome: 'Ana Paula'
+            }, 
+            {
+                codigo: 6,
+                nome: 'Carla'
+            }, 
+            {
+                codigo: 7,
+                nome: 'Aline'
+            }, 
+            {
+                codigo: 8,
+                nome: 'Bárbara'
+            }, 
+            {
+                codigo: 9,
+                nome: 'Ingrid'
+            }
+        ];
+
+
+        // Estuturando um laço para percorrer a lista de alunas
+
+        listaAlunas.forEach( aluna => {
+            if (aluna.codigo % 2 != 0) {
+                console.log('Código: ' + aluna.codigo + ' Nome: ' + aluna.nome);
+            }
+        });
+
+
+
+    </script>
+</body>
+</html>

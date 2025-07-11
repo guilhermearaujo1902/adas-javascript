@@ -1,0 +1,65 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Vetores</h1>
+
+
+    <script>
+
+        // Declarando um Vetor vazio
+        const frutas = [];
+
+        // Atribuição de valor para uma posição do vetor
+        frutas[1] = 'morango';
+        frutas[8] = 'jaca';
+
+        console.log(frutas);
+        console.log(frutas.toString());
+
+        const cores = ['rebecapurple', 'darkorange', 'seagreen', 'red', 'green', 'blue'];
+
+        console.log(cores);
+        console.log(cores.toString());
+
+        // Inserir um elemento na última posição da lista
+        cores.push('tomato');
+        console.log(cores);
+
+        // Remover um elemento da última posição da lista
+        cores.pop();
+        console.log(cores);
+
+        // Inserir um elemento na primeira posição da lista
+        cores.unshift('verde');
+        console.log(cores);
+
+        // Remover um elemento da primeira posição da lista
+        cores.shift();
+        console.log(cores);
+
+
+        // Remover elemento em posição específica
+        cores.splice(3,1);
+        console.log(cores);
+
+        // Inserir elemento em posição específica
+        cores.splice(2,0,'pepapink');
+        console.log(cores);
+
+        // Substituir elemento em posição específica
+        cores.splice(4,1,'verde')
+        console.log(cores);
+
+        // Descobrir o index de um elemento da lista
+        const indexPepa = cores.indexOf('pepapink');
+        console.log('Index encontrado: ' + indexPepa);
+
+
+    </script>    
+</body>
+</html>

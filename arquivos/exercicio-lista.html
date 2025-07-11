@@ -1,0 +1,46 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Manipulando a lista de frutas</h1>
+
+    <input type="text" id="fruta" placeholder="Digite o nome da fruta">
+    <br><br>
+    <button onclick="addInicio()">Adicionar Início</button>
+    <button onclick="addFinal()">Adicionar Fim</button>
+    <button onclick="removeInicio()">Remover Início</button>
+    <button onclick="removeFinal()">Remover Fim</button>
+    
+    <script>
+
+        const listaFrutas = [];
+
+        function addInicio() {
+            const fruta = document.getElementById('fruta').value;
+            listaFrutas.unshift(fruta);
+            console.log(listaFrutas);
+        }
+
+        function addFinal() {
+            const fruta = document.getElementById('fruta').value;
+            listaFrutas.push(fruta);
+            console.log(listaFrutas);
+        }
+
+        function removeInicio() {
+            listaFrutas.shift();
+            console.log(listaFrutas);
+        }
+
+        function removeFinal() {
+            listaFrutas.pop();
+            console.log(listaFrutas);
+        }
+
+    </script>
+</body>
+</html>
